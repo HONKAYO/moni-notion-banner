@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moni Extension Banner</title>
+    <meta
+      name="description"
+      content="A polished, embeddable release banner for the Moni Extension."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%23f2b765'/%3E%3Cstop offset='1' stop-color='%2358d0c1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%23261833'/%3E%3Cpath d='M20 17h8l8 10 8-10h8L40 32l12 15h-8L36 37l-8 10h-8l12-15z' fill='url(%23g)'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="banner-card" id="banner-card">
+        <div class="banner-noise"></div>
+        <div class="banner-glow banner-glow-left"></div>
+        <div class="banner-glow banner-glow-right"></div>
+        <span class="bg-word bg-word-left">MONI</span>
+        <span class="bg-word bg-word-right">SIGNAL</span>
+        <span class="bg-word bg-word-bottom">SMART</span>
+
+        <div class="banner-main">
+          <div class="copy-column">
+            <div class="banner-topline">
+              <span class="eyebrow" id="version-chip">Build Update 2.3.0</span>
+              <span class="status-pill">
+                <span class="status-dot"></span>
+                Chrome + X + terminals
+              </span>
+            </div>
+
+            <div class="hero-headline">
+              <div class="hero-copy">
+                <span class="hero-title" id="banner-title">Moni Extension</span>
+                <span class="hero-subtitle" id="banner-tagline">
+                  Faster signal-to-trade across X and trading terminals
+                </span>
+              </div>
+
+              <button class="header-toggle" id="banner-toggle" type="button" aria-expanded="false">
+                <span class="toggle-copy">Release notes</span>
+                <span class="chevron" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M8 5l8 7-8 7" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <p class="hero-description">
+              Go from signal discovery to execution without tab chaos. Moni brings quick buy,
+              social context and wallet labels directly into the places you already trade.
+            </p>
+
+            <div class="cta-row">
+              <a
+                class="cta-button"
+                id="download-link"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                aria-disabled="true"
+              >
+                <span id="download-label">Download Now</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+              <a class="secondary-button" id="changelog-link" href="#" target="_blank" rel="noreferrer">
+                Changelog
+              </a>
+            </div>
+
+            <div class="banner-meta">
+              <div class="metric-card">
+                <span class="metric-label">Quick Buy</span>
+                <span class="metric-value">Trade direct from X posts and profiles</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-label">Moni Score</span>
+                <span class="metric-value">Social context on Axiom and Padre</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-label">Smart Labels</span>
+                <span class="metric-value">Know exactly who you are looking at</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-stage">
+            <a class="mini-sticker mini-sticker-top" data-download-mirror="true" href="https://chromewebstore.google.com/detail/moni-extension/bgooiolaoinoncegoopcmincbomphmhi" target="_blank" rel="noreferrer">
+              Download now
+            </a>
+            <div class="signal-card">X, Axiom, Padre and terminals in one flow</div>
+            <div class="float-chip float-chip-top">Moni Score</div>
+            <div class="float-chip float-chip-bottom">Smart labels</div>
+            <div class="mascot-frame" aria-hidden="true">
+              <svg class="mascot-svg" viewBox="0 0 360 310" role="img">
+                <defs>
+                  <linearGradient id="bodyGradient" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#9a72ff" />
+                    <stop offset="100%" stop-color="#6238ff" />
+                  </linearGradient>
+                  <linearGradient id="coinGradient" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#d7ff6d" />
+                    <stop offset="100%" stop-color="#73e46e" />
+                  </linearGradient>
+                  <radialGradient id="glowGradient" cx="50%" cy="45%" r="60%">
+                    <stop offset="0%" stop-color="#b779ff" stop-opacity="0.7" />
+                    <stop offset="100%" stop-color="#b779ff" stop-opacity="0" />
+                  </radialGradient>
+                </defs>
+                <ellipse cx="185" cy="160" rx="120" ry="110" fill="url(#glowGradient)" />
+                <g transform="translate(60 12)">
+                  <circle cx="72" cy="210" r="32" fill="url(#coinGradient)" stroke="#181022" stroke-width="7" />
+                  <text x="72" y="220" text-anchor="middle" fill="#193315" font-size="20" font-family="Outfit, sans-serif" font-weight="900">M</text>
+                  <path
+                    d="M94 56c12-20 40-32 68-32s56 12 68 32c24 4 42 27 42 52v108c0 41-33 74-74 74H126c-41 0-74-33-74-74V108c0-25 18-48 42-52z"
+                    fill="url(#bodyGradient)"
+                    stroke="#171020"
+                    stroke-width="8"
+                    stroke-linejoin="round"
+                  />
+                  <circle cx="118" cy="76" r="22" fill="url(#bodyGradient)" stroke="#171020" stroke-width="8" />
+                  <circle cx="206" cy="76" r="22" fill="url(#bodyGradient)" stroke="#171020" stroke-width="8" />
+                  <ellipse cx="136" cy="136" rx="34" ry="28" fill="#fff9ef" stroke="#171020" stroke-width="7" />
+                  <ellipse cx="204" cy="136" rx="34" ry="28" fill="#fff9ef" stroke="#171020" stroke-width="7" />
+                  <ellipse cx="148" cy="142" rx="17" ry="18" fill="#171020" />
+                  <ellipse cx="192" cy="142" rx="17" ry="18" fill="#171020" />
+                  <circle cx="155" cy="134" r="5" fill="#ffffff" />
+                  <circle cx="199" cy="134" r="5" fill="#ffffff" />
+                  <path d="M118 110c14-14 30-16 42-12" fill="none" stroke="#171020" stroke-width="7" stroke-linecap="round" />
+                  <path d="M182 98c12-4 28-2 42 12" fill="none" stroke="#171020" stroke-width="7" stroke-linecap="round" />
+                  <path
+                    d="M126 200c18 24 36 34 58 34 22 0 40-10 58-34-2-18-18-34-58-34-40 0-56 16-58 34z"
+                    fill="#ff784a"
+                    stroke="#171020"
+                    stroke-width="8"
+                    stroke-linejoin="round"
+                  />
+                  <path d="M144 206c14 10 28 14 40 14 12 0 26-4 40-14" fill="none" stroke="#ffcf68" stroke-width="7" stroke-linecap="round" />
+                  <path
+                    d="M78 190c-22 10-36 28-38 48-1 17 9 28 28 32 25 5 52-20 58-54"
+                    fill="none"
+                    stroke="#171020"
+                    stroke-width="14"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M44 233c7-8 18-15 28-14 11 1 19 10 19 22 0 11-7 20-18 24-16 6-31 0-38-15-5-10-2-18 9-17z"
+                    fill="url(#bodyGradient)"
+                    stroke="#171020"
+                    stroke-width="8"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="quickbar">
+          <div class="access-card">
+            <span class="access-label">Access code</span>
+            <div class="access-row">
+              <span class="access-arrow">&rarr;</span>
+              <code id="access-code">fba798a4</code>
+            </div>
+          </div>
+
+          <div class="link-stack">
+            <a class="text-link" id="source-link" href="#" target="_blank" rel="noreferrer">
+              Open source
+            </a>
+            <a class="text-link" id="docs-link" href="#" target="_blank" rel="noreferrer">
+              DeepWiki
+            </a>
+            <span class="quiet-text">Click release notes above for the full feature list.</span>
+          </div>
+        </div>
+
+        <div class="expandable-panel" id="expandable-panel" hidden>
+          <div class="panel-grid">
+            <div class="panel-main">
+              <p class="panel-kicker">What's new in this release</p>
+              <ul class="feature-list" id="feature-list">
+                <li>Trade directly on X with Quick Buy from any CA you spot in posts or profiles.</li>
+                <li>See social metrics on Axiom and Padre, including Moni Score and smart holder signals.</li>
+                <li>Generate, share and track invite codes with a three-tier referral flow.</li>
+                <li>Keep labels everywhere, including X accounts and wallet tags inside terminals.</li>
+                <li>Manage presets, settings and integrations from one cleaner control surface.</li>
+                <li>Ship with stability upgrades, fewer crashes and a sharper instant trade UI.</li>
+              </ul>
+            </div>
+
+            <aside class="panel-side">
+              <div class="note-card">
+                <span class="access-label">Moni Flow</span>
+                <p class="note-copy">
+                  One extension for discovery, context and execution, instead of bouncing between five tabs and two terminals.
+                </p>
+              </div>
+              <div class="note-card">
+                <span class="access-label">Highlights</span>
+                <p class="note-copy">
+                  Quick Buy, Moni Score, smart mentions, invite codes, wallet tags and a cleaner instant trade loop.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
